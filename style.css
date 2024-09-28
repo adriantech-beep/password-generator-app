@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: hsl(248, 15%, 11%);
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+}
+header p {
+  color: hsl(251, 9%, 53%);
+  font-weight: 500;
+}
+.container {
+  width: 100vw;
+  max-width: 540px;
+  height: 632px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-top__section {
+  width: 100%;
+  height: 80px;
+  background-color: hsl(248, 10%, 15%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.app-top__section input {
+  width: 80%;
+  height: 60px;
+  font-size: 32px;
+  background-color: hsl(248, 10%, 15%);
+  border: none;
+  outline: none;
+  color: hsl(251, 9%, 53%);
+}
+
+.app-top__section p {
+  color: hsl(127, 100%, 82%);
+}
+.app-top__section img {
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+.app-top__content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-lower__section {
+  width: 100%;
+  height: 540px;
+  background-color: hsl(248, 10%, 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.app-lower__section .char-length {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-lower__section .char-length label {
+  color: hsl(252, 11%, 91%);
+  font-size: 18px;
+}
+.app-lower__section .char-length p {
+  color: hsl(127, 100%, 82%);
+  font-size: 32px;
+}
+.app-lower__section-choices {
+  width: 90%;
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app-lower__section-choices label {
+  color: hsl(252, 11%, 91%);
+  margin-left: 1em;
+}
+.app-lower__section-choices input[type="checkbox"] {
+  outline: 2px solid hsl(127, 100%, 82%);
+  accent-color: hsl(127, 100%, 82%);
+  color: hsl(248, 10%, 15%);
+}
+.app-lower__section-choices input[type="checkbox"]::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: hsl(248, 10%, 15%);
+  border: 1px solid hsl(127, 100%, 82%);
+}
+
+.app-lower__display-strength {
+  width: 90%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: hsl(248, 15%, 11%);
+}
+.app-lower__display-strength p {
+  color: hsl(251, 9%, 53%);
+  margin-left: 1.5em;
+}
+
+.app-lower__display-strength .strength-level {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.app-lower__display-strength .strength-level:last-child {
+  margin-bottom: 0;
+}
+.app-lower__display-strength .strength-label {
+  color: #888;
+  font-size: 14px;
+}
+.app-lower__display-strength .strength-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.app-lower__display-strength .bars {
+  display: flex;
+  gap: 5px;
+}
+.app-lower__display-strength .bar {
+  width: 10px;
+  height: 28px;
+  background-color: #444;
+  border: 1px solid hsl(252, 11%, 91%);
+}
+.strength-level {
+  width: 31%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.app-lower__button {
+  width: 90%;
+  height: 65px;
+}
+.app-lower__button button {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: hsl(248, 15%, 11%);
+  font-weight: 600;
+  background: hsl(127, 100%, 82%);
+  border: none;
+  cursor: pointer;
+}
+.app-lower__button button:hover {
+  border: 2px solid hsl(127, 100%, 82%);
+  background: hsl(248, 10%, 15%);
+  color: hsl(127, 100%, 82%);
+}
+.app-lower__button button span {
+  margin-left: 10px;
+}
+.app-lower__button button .generate span:hover img {
+  color: hsl(127, 100%, 82%);
+}
+/********Slider button***************/
+.range-slider__section {
+  width: 90%;
+}
+.range-slider__section input {
+  width: 100%;
+  cursor: pointer;
+}
+.range-slider__section input[type="range"]::-webkit-slider-runnable-track {
+  background: hsl(248, 10%, 11%);
+  height: 8px;
+}
+
+.range-slider__section input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -8px;
+  height: 2rem;
+  width: 1rem;
+  padding: 0.8em;
+  background-color: #43e5f7;
+}
+.range-slider__section input[type="range"]::-webkit-slider-thumb:hover {
+  background: #444;
+}
+.range-slider__section input[type="range"]::-webkit-slider-runnable-track {
+  background-color: hsl(248, 10%, 11%);
+  height: 0.5rem;
+}
+.range-slider__section input[type="range"]:focus {
+  background-color: hsl(248, 10%, 15%);
+}
+
+.range-slider__section input[type="range"]:focus::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid hsl(127, 100%, 82%);
+  border-radius: 50%;
+  outline: 3px solid hsl(127, 100%, 82%);
+  outline-offset: 0.125rem;
+  color: #ffff;
+}
+.range-slider__section input[type="range"]::before::-moz-range-progress {
+  background-color: #43e5f7;
+}

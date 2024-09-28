@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="frontendmentor.io" content="adrian.dev" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"
+      defer
+    ></script>
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <header>
+      <p>Password Generator</p>
+    </header>
+    <main>
+      <div class="container">
+        <!---------Top Part--------------->
+        <div class="app-top__section">
+          <div class="app-top__content">
+            <input type="text" class="output-code" />
+            <p class="copied"></p>
+            <img
+              src="images/icon-copy.svg"
+              alt="An ICON image"
+              class="copy-code"
+            />
+          </div>
+        </div>
+        <!---------Lower Part--------------->
+        <div class="app-lower__section">
+          <div class="char-length">
+            <label for="length">Character Length</label>
+            <p class="character-display__length">10</p>
+          </div>
+          <!---------Slider Part--------------->
+          <div class="range-slider__section">
+            <input
+              type="range"
+              id="character-volume"
+              name="volume"
+              min="5"
+              max="15"
+            />
+          </div>
+          <!---------Choices Part--------------->
+          <div class="app-lower__section-choices">
+            <div>
+              <input type="checkbox" id="uppercase" name="uppercase" />
+              <label for="uppercase">Include Uppercase Letters</label>
+            </div>
+            <div>
+              <input type="checkbox" id="lowercase" name="lowercase" />
+              <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+            <div>
+              <input type="checkbox" id="numbers" name="numbers" />
+              <label for="numbers">Include Numbers</label>
+            </div>
+            <div>
+              <input type="checkbox" id="symbols" name="symbols" />
+              <label for="symbols">Include Symbols</label>
+            </div>
+          </div>
+          <div class="app-lower__display-strength">
+            <p>STRENGTH</p>
+            <div class="strength-level">
+              <div class="strength-text"></div>
+              <div class="bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+          <!-------------BUtton Part-------->
+          <div class="app-lower__button">
+            <button class="generate">
+              GENERATE
+              <span class="img-container">
+                <img src="images/icon-arrow-right.svg" alt="an arrow image" />
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <footer>
+      <p>Challenged by:<a href="www.frontendmentor.io"></a></p>
+    </footer> -->
+    <script src="script.js"></script>
+  </body>
+</html>
