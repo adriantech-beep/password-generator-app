@@ -6,6 +6,7 @@ const includeNumbers = document.getElementById("numbers");
 const includeSymbols = document.getElementById("symbols");
 const barChangeColor = document.querySelectorAll(".bar");
 const copied = document.querySelector(".copied");
+let characterSlider = document.getElementById("character-volume");
 /////////////////////////////////////////////////////////////////
 const alphabetArray = [...Array(26)].map((_, i) => String.fromCharCode(i + 97));
 const uppercaseArray = [...Array(26)].map((_, i) =>
